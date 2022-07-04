@@ -7,25 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26162CA37AF050A0DA649E08 /* Pods_Udemy_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04EF0B1E8C968AF7EF3924F /* Pods_Udemy_Messenger.framework */; };
 		990D8E112871940E00647FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D8E102871940E00647FCB /* AppDelegate.swift */; };
 		990D8E132871940E00647FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D8E122871940E00647FCB /* SceneDelegate.swift */; };
-		990D8E152871940E00647FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D8E142871940E00647FCB /* ViewController.swift */; };
-		990D8E182871940E00647FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990D8E162871940E00647FCB /* Main.storyboard */; };
 		990D8E1B2871940E00647FCB /* Udemy_Messenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 990D8E192871940E00647FCB /* Udemy_Messenger.xcdatamodeld */; };
 		990D8E1D2871941000647FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990D8E1C2871941000647FCB /* Assets.xcassets */; };
 		990D8E202871941000647FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990D8E1E2871941000647FCB /* LaunchScreen.storyboard */; };
+		9913772F28719B3000EA8DD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9913772E28719B3000EA8DD6 /* GoogleService-Info.plist */; };
+		99D1987628728FAA003A666D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987528728FAA003A666D /* LoginPresenter.swift */; };
+		99D1987828728FED003A666D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987728728FED003A666D /* LoginModel.swift */; };
+		99D1987A2872913E003A666D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198792872913E003A666D /* Constants.swift */; };
+		99D1987D2872998A003A666D /* FbCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987C2872998A003A666D /* FbCollectionReference.swift */; };
+		99D1987F28729A3D003A666D /* FbUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987E28729A3D003A666D /* FbUserListener.swift */; };
+		99D198812872ADAD003A666D /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198802872ADAD003A666D /* LoginContract.swift */; };
+		99D198882872C411003A666D /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198872872C411003A666D /* RegisterScreen.swift */; };
+		99D1988A2872CF84003A666D /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198892872CF84003A666D /* RegisterPresenter.swift */; };
+		99D1988C2872CF96003A666D /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1988B2872CF96003A666D /* RegisterContract.swift */; };
+		99D198932872D35D003A666D /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198922872D35D003A666D /* Extensions+String.swift */; };
+		99D198952872D770003A666D /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198942872D770003A666D /* RegisterModel.swift */; };
+		99FA4BB72871E8FD00F77CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FA4BB62871E8FD00F77CF3 /* Main.storyboard */; };
+		99FA4BBA2871E92700F77CF3 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4BB92871E92700F77CF3 /* LoginScreen.swift */; };
+		99FA4BBC2871ECD900F77CF3 /* MainStoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA4BBB2871ECD900F77CF3 /* MainStoryboardManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CB247D3109A78E573CC5F23 /* Pods-Udemy-Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Udemy-Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Udemy-Messenger/Pods-Udemy-Messenger.debug.xcconfig"; sourceTree = "<group>"; };
 		990D8E0D2871940E00647FCB /* Udemy-Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Udemy-Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		990D8E102871940E00647FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		990D8E122871940E00647FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		990D8E142871940E00647FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		990D8E172871940E00647FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		990D8E1A2871940E00647FCB /* Udemy_Messenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Udemy_Messenger.xcdatamodel; sourceTree = "<group>"; };
 		990D8E1C2871941000647FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		990D8E1F2871941000647FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		990D8E212871941000647FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9913772E28719B3000EA8DD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		99D1987528728FAA003A666D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		99D1987728728FED003A666D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		99D198792872913E003A666D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		99D1987C2872998A003A666D /* FbCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbCollectionReference.swift; sourceTree = "<group>"; };
+		99D1987E28729A3D003A666D /* FbUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbUserListener.swift; sourceTree = "<group>"; };
+		99D198802872ADAD003A666D /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		99D198872872C411003A666D /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		99D198892872CF84003A666D /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		99D1988B2872CF96003A666D /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		99D198922872D35D003A666D /* Extensions+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
+		99D198942872D770003A666D /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		99FA4BB62871E8FD00F77CF3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		99FA4BB92871E92700F77CF3 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		99FA4BBB2871ECD900F77CF3 /* MainStoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboardManager.swift; sourceTree = "<group>"; };
+		A04EF0B1E8C968AF7EF3924F /* Pods_Udemy_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Udemy_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAB56B083E55E9A3F1D0CFC /* Pods-Udemy-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Udemy-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Udemy-Messenger/Pods-Udemy-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26162CA37AF050A0DA649E08 /* Pods_Udemy_Messenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1467EC2448D6D83B07910C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04EF0B1E8C968AF7EF3924F /* Pods_Udemy_Messenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		990D8E042871940E00647FCB = {
 			isa = PBXGroup;
 			children = (
 				990D8E0F2871940E00647FCB /* Udemy-Messenger */,
 				990D8E0E2871940E00647FCB /* Products */,
+				F287595D9AF0C71E6688EA0E /* Pods */,
+				1467EC2448D6D83B07910C5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +99,94 @@
 		990D8E0F2871940E00647FCB /* Udemy-Messenger */ = {
 			isa = PBXGroup;
 			children = (
-				990D8E102871940E00647FCB /* AppDelegate.swift */,
-				990D8E122871940E00647FCB /* SceneDelegate.swift */,
-				990D8E142871940E00647FCB /* ViewController.swift */,
-				990D8E162871940E00647FCB /* Main.storyboard */,
-				990D8E1C2871941000647FCB /* Assets.xcassets */,
-				990D8E1E2871941000647FCB /* LaunchScreen.storyboard */,
-				990D8E212871941000647FCB /* Info.plist */,
-				990D8E192871940E00647FCB /* Udemy_Messenger.xcdatamodeld */,
+				99FA4BB52871E87900F77CF3 /* Screens */,
+				99FA4BB42871E84B00F77CF3 /* Application */,
+				99FA4BB32871E77C00F77CF3 /* SupportFiles */,
 			);
 			path = "Udemy-Messenger";
+			sourceTree = "<group>";
+		};
+		99D1987B28729960003A666D /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				99D1987C2872998A003A666D /* FbCollectionReference.swift */,
+				99D1987E28729A3D003A666D /* FbUserListener.swift */,
+			);
+			path = FirebaseHelpers;
+			sourceTree = "<group>";
+		};
+		99D198862872B1A3003A666D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				99D198872872C411003A666D /* RegisterScreen.swift */,
+				99D198892872CF84003A666D /* RegisterPresenter.swift */,
+				99D1988B2872CF96003A666D /* RegisterContract.swift */,
+				99D198942872D770003A666D /* RegisterModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		99D198912872D347003A666D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				99D198922872D35D003A666D /* Extensions+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		99FA4BB32871E77C00F77CF3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				99D198912872D347003A666D /* Extensions */,
+				99D1987B28729960003A666D /* FirebaseHelpers */,
+				9913772E28719B3000EA8DD6 /* GoogleService-Info.plist */,
+				990D8E212871941000647FCB /* Info.plist */,
+				990D8E192871940E00647FCB /* Udemy_Messenger.xcdatamodeld */,
+				990D8E1C2871941000647FCB /* Assets.xcassets */,
+				99D198792872913E003A666D /* Constants.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		99FA4BB42871E84B00F77CF3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				990D8E1E2871941000647FCB /* LaunchScreen.storyboard */,
+				990D8E102871940E00647FCB /* AppDelegate.swift */,
+				990D8E122871940E00647FCB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		99FA4BB52871E87900F77CF3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				99D198862872B1A3003A666D /* Register */,
+				99FA4BB82871E90400F77CF3 /* Login */,
+				99FA4BB62871E8FD00F77CF3 /* Main.storyboard */,
+				99FA4BBB2871ECD900F77CF3 /* MainStoryboardManager.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		99FA4BB82871E90400F77CF3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				99FA4BB92871E92700F77CF3 /* LoginScreen.swift */,
+				99D1987728728FED003A666D /* LoginModel.swift */,
+				99D1987528728FAA003A666D /* LoginPresenter.swift */,
+				99D198802872ADAD003A666D /* LoginContract.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F287595D9AF0C71E6688EA0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CB247D3109A78E573CC5F23 /* Pods-Udemy-Messenger.debug.xcconfig */,
+				DDAB56B083E55E9A3F1D0CFC /* Pods-Udemy-Messenger.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 990D8E242871941000647FCB /* Build configuration list for PBXNativeTarget "Udemy-Messenger" */;
 			buildPhases = (
+				1C0C2C2036943ECFC5F690D0 /* [CP] Check Pods Manifest.lock */,
 				990D8E092871940E00647FCB /* Sources */,
 				990D8E0A2871940E00647FCB /* Frameworks */,
 				990D8E0B2871940E00647FCB /* Resources */,
+				E96EA3A6C7342C9011259053 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,36 +250,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				990D8E202871941000647FCB /* LaunchScreen.storyboard in Resources */,
+				9913772F28719B3000EA8DD6 /* GoogleService-Info.plist in Resources */,
 				990D8E1D2871941000647FCB /* Assets.xcassets in Resources */,
-				990D8E182871940E00647FCB /* Main.storyboard in Resources */,
+				99FA4BB72871E8FD00F77CF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C0C2C2036943ECFC5F690D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Udemy-Messenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E96EA3A6C7342C9011259053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Udemy-Messenger/Pods-Udemy-Messenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Udemy-Messenger/Pods-Udemy-Messenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Udemy-Messenger/Pods-Udemy-Messenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		990D8E092871940E00647FCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D198882872C411003A666D /* RegisterScreen.swift in Sources */,
+				99D1987628728FAA003A666D /* LoginPresenter.swift in Sources */,
+				99D1987D2872998A003A666D /* FbCollectionReference.swift in Sources */,
+				99D1987828728FED003A666D /* LoginModel.swift in Sources */,
+				99D198952872D770003A666D /* RegisterModel.swift in Sources */,
+				99FA4BBC2871ECD900F77CF3 /* MainStoryboardManager.swift in Sources */,
 				990D8E1B2871940E00647FCB /* Udemy_Messenger.xcdatamodeld in Sources */,
-				990D8E152871940E00647FCB /* ViewController.swift in Sources */,
+				99FA4BBA2871E92700F77CF3 /* LoginScreen.swift in Sources */,
+				99D1988A2872CF84003A666D /* RegisterPresenter.swift in Sources */,
 				990D8E112871940E00647FCB /* AppDelegate.swift in Sources */,
+				99D198812872ADAD003A666D /* LoginContract.swift in Sources */,
+				99D1988C2872CF96003A666D /* RegisterContract.swift in Sources */,
 				990D8E132871940E00647FCB /* SceneDelegate.swift in Sources */,
+				99D1987F28729A3D003A666D /* FbUserListener.swift in Sources */,
+				99D1987A2872913E003A666D /* Constants.swift in Sources */,
+				99D198932872D35D003A666D /* Extensions+String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		990D8E162871940E00647FCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				990D8E172871940E00647FCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		990D8E1E2871941000647FCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +456,7 @@
 		};
 		990D8E252871941000647FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB247D3109A78E573CC5F23 /* Pods-Udemy-Messenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +464,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 678Z7S5FB3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Udemy-Messenger/Info.plist";
+				INFOPLIST_FILE = "Udemy-Messenger/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +485,7 @@
 		};
 		990D8E262871941000647FCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAB56B083E55E9A3F1D0CFC /* Pods-Udemy-Messenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,12 +493,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 678Z7S5FB3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Udemy-Messenger/Info.plist";
+				INFOPLIST_FILE = "Udemy-Messenger/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

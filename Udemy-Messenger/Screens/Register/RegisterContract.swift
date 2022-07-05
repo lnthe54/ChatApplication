@@ -25,7 +25,7 @@ protocol _RegisterPresenter {
 }
 
 protocol _RegisterModel {
-    func validateFields(email: String, name: String, password: String) -> String
-    func checkForExistingEmail(_ email: String, completion: @escaping (_ errorMessage: String) -> Void)
+    func validateFields(email: String, name: String, password: String) -> (isSuccess: Bool, msg: String)
+    func checkForExistingEmail(_ email: String, name: String, password: String, completion: @escaping (_ errorMessage: String) -> Void)
     func registerUser(_ name: String, email: String, password: String, completion: @escaping (_ errorMessage: String) -> Void)
 }

@@ -25,29 +25,22 @@ class RegisterPresenter: RegisterContract.Presenter {
     }
     
     func validateFields(email: String, name: String, password: String) {
-        let message = model.validateFields(email: email, name: name, password: password)
-        
-        // Validate success
-        if message.isEmpty {
-            model.checkForExistingEmail(email, completion: { [weak self] errorMessage in
-                guard let self = self else {
-                    return
-                }
-                
-                if errorMessage.isEmpty {
-                    self.model.registerUser(name, email: email, password: password) { errorMessage in
-                        if errorMessage.isEmpty {
-                            self.view?.showAlert()
-                        } else {
-                            self.view?.showNotice(withMessage: errorMessage)
-                        }
+        model.checkForExistingEmail(email, name: name, password: password, completion: { [weak self] errorMsg in
+            guard let self = self else {
+                return
+            }
+            
+            if errorMsg.isEmpty {
+                self.model.registerUser(name, email: email, password: password) { errorMessage in
+                    if errorMessage.isEmpty {
+                        self.view?.showAlert()
+                    } else {
+                        self.view?.showNotice(withMessage: errorMessage)
                     }
-                } else {
-                    self.view?.showNotice(withMessage: errorMessage)
                 }
-            })
-        } else {
-            view?.showNotice(withMessage: message)
-        }
+            } else {
+                self.view?.showNotice(withMessage: errorMsg)
+            }
+        })
     }
 }

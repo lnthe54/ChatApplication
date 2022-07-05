@@ -15,35 +15,41 @@ class RegisterModel: RegisterContract.Model {
     private let limitNumberPassword: Int = 6
     private let limitNumberName: Int = 30
     
-    func validateFields(email: String, name: String, password: String) -> String {
+    func validateFields(email: String, name: String, password: String) -> (isSuccess: Bool, msg: String) {
         if email.trimmingCharacters(in: .whitespacesAndNewlines) == String.empty
             || name.trimmingCharacters(in: .whitespacesAndNewlines) == String.empty
             || password.trimmingCharacters(in: .whitespacesAndNewlines) == String.empty {
-                    return "Please, make sure you have filled out all the information."
+            return (false, "Please, make sure you have filled out all the information.")
                 }
         
         if password.count < limitNumberPassword {
-            return "Passwords must be at least 6 characters."
+            return (false, "Passwords must be at least 6 characters.")
         }
         
         if name.count > limitNumberName {
-            return "Your name exceeds 30 characters."
+            return (false, "Your name exceeds 30 characters.")
         }
         
         if !email.isValidEmail() {
-            return "Invalid email format."
+            return (false, "Invalid email format.")
         }
         
-        return String.empty
+        return (true, String.empty)
     }
     
-    func checkForExistingEmail(_ email: String, completion: @escaping (_ errorMessage: String) -> Void) {
-        Auth.auth().fetchSignInMethods(forEmail: email) { (methods, error) in
-            if methods == nil {
-                return completion(String.empty)
-            } else {
-                return completion("Email is exists.")
+    func checkForExistingEmail(_ email: String, name: String, password: String, completion: @escaping (String) -> Void) {
+        let result = validateFields(email: email, name: name, password: password)
+        
+        if result.isSuccess {
+            Auth.auth().fetchSignInMethods(forEmail: email) { (methods, error)in
+                if methods == nil {
+                    completion(String.empty)
+                } else {
+                    completion("Email is exists")
+                }
             }
+        } else {
+            completion(result.msg)
         }
     }
     

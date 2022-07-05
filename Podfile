@@ -1,4 +1,4 @@
-target 'Udemy-Messenger' do
+target 'HowWeTalk' do
   use_frameworks!
 
   # Pods for Udemy-Messenger

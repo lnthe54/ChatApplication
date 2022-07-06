@@ -13,11 +13,11 @@
 		990D8E1D2871941000647FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990D8E1C2871941000647FCB /* Assets.xcassets */; };
 		990D8E202871941000647FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990D8E1E2871941000647FCB /* LaunchScreen.storyboard */; };
 		9913772F28719B3000EA8DD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9913772E28719B3000EA8DD6 /* GoogleService-Info.plist */; };
+		996523F02875770600DBB2C5 /* NetworkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996523EF2875770600DBB2C5 /* NetworkLoading.swift */; };
+		99B5C28B2875872400AD9D5C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 99B5C28A2875872400AD9D5C /* loading.json */; };
 		99D1987628728FAA003A666D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987528728FAA003A666D /* LoginPresenter.swift */; };
 		99D1987828728FED003A666D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987728728FED003A666D /* LoginModel.swift */; };
 		99D1987A2872913E003A666D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198792872913E003A666D /* Constants.swift */; };
-		99D1987D2872998A003A666D /* FbCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987C2872998A003A666D /* FbCollectionReference.swift */; };
-		99D1987F28729A3D003A666D /* FbUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1987E28729A3D003A666D /* FbUserListener.swift */; };
 		99D198812872ADAD003A666D /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198802872ADAD003A666D /* LoginContract.swift */; };
 		99D198882872C411003A666D /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198872872C411003A666D /* RegisterScreen.swift */; };
 		99D1988A2872CF84003A666D /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D198892872CF84003A666D /* RegisterPresenter.swift */; };
@@ -40,11 +40,11 @@
 		990D8E1F2871941000647FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		990D8E212871941000647FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9913772E28719B3000EA8DD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		996523EF2875770600DBB2C5 /* NetworkLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoading.swift; sourceTree = "<group>"; };
+		99B5C28A2875872400AD9D5C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		99D1987528728FAA003A666D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		99D1987728728FED003A666D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		99D198792872913E003A666D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		99D1987C2872998A003A666D /* FbCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbCollectionReference.swift; sourceTree = "<group>"; };
-		99D1987E28729A3D003A666D /* FbUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbUserListener.swift; sourceTree = "<group>"; };
 		99D198802872ADAD003A666D /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		99D198872872C411003A666D /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		99D198892872CF84003A666D /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
@@ -106,13 +106,29 @@
 			path = HowWeTalk;
 			sourceTree = "<group>";
 		};
-		99D1987B28729960003A666D /* FirebaseHelpers */ = {
+		99B5C288287586FD00AD9D5C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				99D1987C2872998A003A666D /* FbCollectionReference.swift */,
-				99D1987E28729A3D003A666D /* FbUserListener.swift */,
+				99B5C2892875870800AD9D5C /* Animation */,
+				990D8E1C2871941000647FCB /* Assets.xcassets */,
 			);
-			path = FirebaseHelpers;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		99B5C2892875870800AD9D5C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				99B5C28A2875872400AD9D5C /* loading.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		99D1987B28729960003A666D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				996523EF2875770600DBB2C5 /* NetworkLoading.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		99D198862872B1A3003A666D /* Register */ = {
@@ -137,12 +153,12 @@
 		99FA4BB32871E77C00F77CF3 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				99B5C288287586FD00AD9D5C /* Assets */,
 				99D198912872D347003A666D /* Extensions */,
-				99D1987B28729960003A666D /* FirebaseHelpers */,
+				99D1987B28729960003A666D /* Helpers */,
 				9913772E28719B3000EA8DD6 /* GoogleService-Info.plist */,
 				990D8E212871941000647FCB /* Info.plist */,
 				990D8E192871940E00647FCB /* Udemy_Messenger.xcdatamodeld */,
-				990D8E1C2871941000647FCB /* Assets.xcassets */,
 				99D198792872913E003A666D /* Constants.swift */,
 			);
 			path = SupportFiles;
@@ -253,6 +269,7 @@
 				9913772F28719B3000EA8DD6 /* GoogleService-Info.plist in Resources */,
 				990D8E1D2871941000647FCB /* Assets.xcassets in Resources */,
 				99FA4BB72871E8FD00F77CF3 /* Main.storyboard in Resources */,
+				99B5C28B2875872400AD9D5C /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,10 +324,10 @@
 			files = (
 				99D198882872C411003A666D /* RegisterScreen.swift in Sources */,
 				99D1987628728FAA003A666D /* LoginPresenter.swift in Sources */,
-				99D1987D2872998A003A666D /* FbCollectionReference.swift in Sources */,
 				99D1987828728FED003A666D /* LoginModel.swift in Sources */,
 				99D198952872D770003A666D /* RegisterModel.swift in Sources */,
 				99FA4BBC2871ECD900F77CF3 /* MainStoryboardManager.swift in Sources */,
+				996523F02875770600DBB2C5 /* NetworkLoading.swift in Sources */,
 				990D8E1B2871940E00647FCB /* Udemy_Messenger.xcdatamodeld in Sources */,
 				99FA4BBA2871E92700F77CF3 /* LoginScreen.swift in Sources */,
 				99D1988A2872CF84003A666D /* RegisterPresenter.swift in Sources */,
@@ -318,7 +335,6 @@
 				99D198812872ADAD003A666D /* LoginContract.swift in Sources */,
 				99D1988C2872CF96003A666D /* RegisterContract.swift in Sources */,
 				990D8E132871940E00647FCB /* SceneDelegate.swift in Sources */,
-				99D1987F28729A3D003A666D /* FbUserListener.swift in Sources */,
 				99D1987A2872913E003A666D /* Constants.swift in Sources */,
 				99D198932872D35D003A666D /* Extensions+String.swift in Sources */,
 			);

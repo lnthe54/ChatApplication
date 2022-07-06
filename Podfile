@@ -12,4 +12,5 @@ target 'HowWeTalk' do
   # Keyboard
   pod 'IQKeyboardManagerSwift'
   
+  pod 'lottie-ios'
 end

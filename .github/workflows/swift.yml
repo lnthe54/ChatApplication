@@ -9,7 +9,7 @@ jobs:
 
     name: Build
     env:
-      SCHEME: "ChatApplication"
+      SCHEME: "HowWeTalk"
       DEVICE: "iPhone 11"
       DERIVED_DATA_PATH: "DerivedData"
     runs-on: macOS-latest

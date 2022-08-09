@@ -1,27 +1,19 @@
 name: Swift
 
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
   build:
 
-    name: Build
-    env:
-      SCHEME: "HowWeTalk"
-      DEVICE: "iPhone 11"
-      DERIVED_DATA_PATH: "DerivedData"
     runs-on: macOS-latest
-    steps:
-    - name: Checkout project
-      uses: actions/checkout@v1
-    - name: Build application
-      run: |
-        set -o pipefail && xcodebuild clean -scheme $SCHEME -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
-    - name: Upload products
-      uses: actions/upload-artifact@v1
-      with:
-        name: Products
-        path: DerivedData/Build/Products
 
+    steps:
+    - uses: actions/checkout@v1
+    - name: Force Xcode 11
+      run: sudo xcode-select -switch /Applications/Xcode_11.2.app  
+    - name: Pod install
+      run: pod install
+    - name: Run tests
+      run: xcodebuild clean test -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
+    - name: Build App
+      run: xcodebuild -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO

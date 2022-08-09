@@ -16,4 +16,4 @@ jobs:
     - name: Run tests
       run: xcodebuild clean test -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
     - name: Build App
-      run: xcodebuild -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      run: xcodebuild -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "generic/platform=iOS" -configuration Debug

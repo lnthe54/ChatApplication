@@ -9,7 +9,7 @@
 
 <p align="center">
   <img src="Resources/login.png" height="600">
-  <img src="Resources/register.png" height="600">
+  <img src="Resources/register.gif" height="600">
 &nbsp; &nbsp; &nbsp; &nbsp;
 </p>
 

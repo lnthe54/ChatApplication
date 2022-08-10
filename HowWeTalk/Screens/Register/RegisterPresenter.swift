@@ -25,6 +25,7 @@ class RegisterPresenter: RegisterContract.Presenter {
     }
     
     func validateFields(email: String, name: String, password: String) {
+        NetworkLoading.shared.startLoading()
         model.checkForExistingEmail(email, name: name, password: password, completion: { [weak self] errorMsg in
             guard let self = self else {
                 return
@@ -32,6 +33,7 @@ class RegisterPresenter: RegisterContract.Presenter {
             
             if errorMsg.isEmpty {
                 self.model.registerUser(name, email: email, password: password) { errorMessage in
+                    NetworkLoading.shared.endLoading()
                     if errorMessage.isEmpty {
                         self.view?.showAlert()
                     } else {
@@ -39,6 +41,7 @@ class RegisterPresenter: RegisterContract.Presenter {
                     }
                 }
             } else {
+                NetworkLoading.shared.endLoading()
                 self.view?.showNotice(withMessage: errorMsg)
             }
         })

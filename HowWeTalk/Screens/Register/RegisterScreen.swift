@@ -18,7 +18,6 @@ class RegisterScreen: UIViewController {
     @IBOutlet private weak var nameTf: UITextField!
     @IBOutlet private weak var pwLabel: UILabel!
     @IBOutlet private weak var passwordTf: UITextField!
-    @IBOutlet private weak var waringLabel: UILabel!
     @IBOutlet private weak var signUpButton: UIButton!
     
     private let presenter: RegisterPresenter = RegisterPresenter(RegisterModel())
@@ -51,10 +50,6 @@ class RegisterScreen: UIViewController {
         passwordTf.placeholder = "Password"
         passwordTf.isSecureTextEntry = true
         
-        waringLabel.textColor = .red
-        waringLabel.font = UIFont.systemFont(ofSize: 12)
-        waringLabel.isHidden = true
-        
         signUpButton.setTitle("REGISTER", for: .normal)
         signUpButton.setTitleColor(.white, for: .normal)
         signUpButton.backgroundColor = .black
@@ -78,11 +73,13 @@ class RegisterScreen: UIViewController {
 // MARK:
 extension RegisterScreen: RegisterContract.View {
     func showNotice(withMessage msg: String) {
-        waringLabel.text = msg
-        waringLabel.isHidden = false
+        view.makeToast(msg)
     }
     
     func showAlert() {
-        self.dismiss(animated: true, completion: nil)
+        view.makeToast("Register Successfully")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }

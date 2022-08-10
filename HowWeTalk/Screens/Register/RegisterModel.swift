@@ -14,7 +14,6 @@ class RegisterModel: RegisterContract.Model {
     
     private let limitNumberPassword: Int = 6
     private let limitNumberName: Int = 30
-    private let loading = NetworkLoading()
     
     func validateFields(email: String, name: String, password: String) -> (isSuccess: Bool, msg: String) {
         if email.trimmingCharacters(in: .whitespacesAndNewlines) == String.empty
@@ -39,16 +38,11 @@ class RegisterModel: RegisterContract.Model {
     }
     
     func checkForExistingEmail(_ email: String, name: String, password: String, completion: @escaping (String) -> Void) {
-        loading.startLoading()
         let result = validateFields(email: email, name: name, password: password)
         
         if result.isSuccess {
-            Auth.auth().fetchSignInMethods(forEmail: email) { [weak self] (methods, error)in
-                guard let self = self else {
-                    return
-                }
+            Auth.auth().fetchSignInMethods(forEmail: email) { (methods, error)in
                 
-                self.loading.endLoading()
                 if methods == nil {
                     completion(String.empty)
                 } else {
@@ -56,10 +50,7 @@ class RegisterModel: RegisterContract.Model {
                 }
             }
         } else {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.loading.endLoading()
-                completion(result.msg)
-            }
+            completion(result.msg)
         }
     }
     

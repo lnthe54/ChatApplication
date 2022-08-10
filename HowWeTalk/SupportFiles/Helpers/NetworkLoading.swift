@@ -10,6 +10,7 @@ import Lottie
 
 class NetworkLoading {
     
+    static let shared = NetworkLoading()
     let window = UIApplication.shared.windows[0]
     var blurView = UIVisualEffectView()
     var animationView = AnimationView()

@@ -13,7 +13,5 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode.app  
     - name: Pod install
       run: pod install
-    - name: Run tests
-      run: xcodebuild clean test -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
     - name: Build App
       run: xcodebuild -project "HowWeTalk.xcodeproj" -scheme "HowWeTalk" -destination "generic/platform=iOS" -configuration Debug
